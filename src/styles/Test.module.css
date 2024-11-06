@@ -1,0 +1,18 @@
+.buttonWithShadow {
+  box-shadow: 0px 1px 3px 0px #0000001a;
+}
+.navShadow {
+  box-shadow: 0px 1px 2px 0px rgba(91, 91, 91, 0.06),
+    0px 3px 3px 0px rgba(91, 91, 91, 0.05),
+    0px 8px 5px 0px rgba(91, 91, 91, 0.03),
+    0px 14px 5px 0px rgba(91, 91, 91, 0.01),
+    0px 21px 6px 0px rgba(91, 91, 91, 0);
+}
+
+.boxShadow {
+  box-shadow: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.09))
+    drop-shadow(0px 11px 6px rgba(0, 0, 0, 0.05))
+    drop-shadow(0px 19px 8px rgba(0, 0, 0, 0.01))
+    drop-shadow(0px 30px 8px rgba(0, 0, 0, 0));
+}
