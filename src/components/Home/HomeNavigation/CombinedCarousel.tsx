@@ -11,7 +11,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 const CarouselData = [
     {
       text: `Integrated\n ERP Solution\n for Seamless Business Management`,
@@ -105,7 +105,7 @@ export function CombinedCarousel() {
         {/* Main Image Carousel */}
         <Carousel
           plugins={[autoplay.current]}
-          className="w-full "
+          className="w-full ml-16"
           opts={{ align: "start", loop: true }} // Enable infinite loop here
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}

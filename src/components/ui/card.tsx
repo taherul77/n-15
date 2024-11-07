@@ -1,4 +1,11 @@
-import * as React from "react"
+"use client";
+import React, {
+  createContext,
+  useState,
+  useContext,
+  useRef,
+  useEffect,
+} from "react";
 
 import { cn } from "@/lib/utils"
 
@@ -74,3 +81,5 @@ const CardFooter = React.forwardRef<
 CardFooter.displayName = "CardFooter"
 
 export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
+
+

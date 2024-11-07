@@ -13,11 +13,11 @@ function layout({ children }: { children: ReactNode }) {
   return (
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
-      <div className="max-w-screen  bg-content bg-cover">
+      <div className="max-w-screen min-h-screen  bg-gray-300 ">
       <Navbar />
       <div>
         <div className="max-w-6xl mx-auto min-h-screen">
-          <div className=" flex flex-col flex-wrap items-center justify-between">
+          <div className=" flex ">
             <div className="">{children}</div>
           </div>
         </div>
