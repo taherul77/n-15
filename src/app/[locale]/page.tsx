@@ -7,11 +7,11 @@ import { SlSocialFacebook } from "react-icons/sl";
 import { SlSocialYoutube } from "react-icons/sl";
 import EnterButton from "@/components/share/EnterButton";
 import { useEffect, useState } from "react";
-
+import { useLocale } from "next-intl";
 
 const Page = () => {
-  const [img, setImg] = useState('');
-
+  const [img, setImg] = useState("");
+  const locale = useLocale();
   useEffect(() => {
     setImg('url("gif/enter.gif")');
   }, []);
@@ -42,14 +42,15 @@ const Page = () => {
                   <p className="text-black font-bold text-[5vh] leading-[4.5vh]">
                     <span className="text-[#2F0181]">Digital</span>{" "}
                     <span className="text-[#FB5900]">Run</span> <br />{" "}
-                    <span className="text-[#2F0181]">Limited</span> <br /> As Bangladesh&apos;s <br />
+                    <span className="text-[#2F0181]">Limited</span> <br /> As
+                    Bangladesh&apos;s <br />
                     premier <br /> software <br />{" "}
                     <span className="text-[#FB5900]">company </span>
                   </p>
                 </motion.div>
               </div>
               <div className="h-[29vh] ml-[32vh] ">
-                <Link href="/">
+                <Link href={`/${locale}/home`}>
                   <EnterButton buttonName="Enter" />
                 </Link>
               </div>

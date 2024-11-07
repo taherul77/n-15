@@ -22,6 +22,7 @@ export default function LocaleLayout({
 		<html lang={locale}>
 			<body className="max-w-screen  overflow-x-hidden">
 				<NextIntlClientProvider messages={messages}>
+					
 					{children}
 				</NextIntlClientProvider>
 			</body>

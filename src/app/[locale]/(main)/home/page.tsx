@@ -1,19 +1,14 @@
-import React from 'react'
-import {  useTranslations } from "next-intl";
+import React from "react";
+import { useTranslations } from "next-intl";
+import HomeComponents from "@/components/Home/HomeComponents";
 const Home = () => {
-    const t = useTranslations("Navbar");
-    // const locale = useLocale();
+  const t = useTranslations("Navbar");
+  // const locale = useLocale();
   return (
     <>
-     <div className='bg-gray-300 flex justify-center items-center w-full h-screen text-5xl  uppercase font-bold'>
-      {t("solutions")}
-    </div>
-    <div className='bg-gray-300 flex justify-center items-center w-full h-screen text-5xl  uppercase font-bold'>
-      {t("solutions")}
-    </div>
+      <HomeComponents />
     </>
-   
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -9,6 +9,9 @@
       "about": "About Us",
       "business": "Business Divisions",
       "revolution": "Industrial Revolution"
-    }
+    },
+    "LocaleLayout": {
+    "title": "Your Page Title"
+  }
   }
   
