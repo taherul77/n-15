@@ -1,7 +1,9 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
-import { FaCogs } from "react-icons/fa";
+import { FaCogs,FaMobileAlt } from "react-icons/fa";
+import { TbWorldCog } from "react-icons/tb";
+import { CiMobile1 } from "react-icons/ci";
 import {
   IconClipboardCopy,
   IconFileBroken,
@@ -18,21 +20,21 @@ const Services = () => {
       description: "Explore the birth of groundbreaking ideas and inventions.",
     
       className: "md:col-span-1",
-      icon: <FaCogs className="h-4 w-4 text-neutral-500 hover:text-[#FC6617]" />,
+      icon: <FaCogs className="h-4 w-4 ]" />,
     },
     {
       title: "The Digital Revolution",
       description: "Dive into the transformative power of technology.",
     
       className: "md:col-span-1",
-      icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+      icon: <FaMobileAlt className="h-4 w-4 " />,
     },
     {
       title: "The Art of Design",
       description: "Discover the beauty of thoughtful and functional design.",
     
       className: "md:col-span-1",
-      icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+      icon: <TbWorldCog className="h-4 w-4 " />,
     },
     {
       title: "The Power of Communication",
@@ -40,7 +42,23 @@ const Services = () => {
         "Understand the impact of effective communication in our lives.",
     
       className: "md:col-span-1",
-      icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+      icon: <CiMobile1 className="h-4 w-4 " />,
+    },
+    {
+      title: "The Power of Communication",
+      description:
+        "Understand the impact of effective communication in our lives.",
+    
+      className: "md:col-span-1",
+      icon: <CiMobile1 className="h-4 w-4 " />,
+    },
+    {
+      title: "The Power of Communication",
+      description:
+        "Understand the impact of effective communication in our lives.",
+    
+      className: "md:col-span-1",
+      icon: <CiMobile1 className="h-4 w-4 " />,
     },
   ];
   return (
