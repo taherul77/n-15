@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <nav className={`top-0 fixed  w-full   z-20 `}>
+      <nav className={`top-0 fixed  w-full   z-50 `}>
         <div className="max-w-6xl mx-auto">
           <div className="container mx-auto flex flex-wrap items-center justify-between">
             <div className={`${isScrolled ? "hidden" : "block"}`}>

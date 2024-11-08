@@ -43,7 +43,7 @@ export default function LocalSwitcher() {
           <SelectTrigger>
             <SelectValue placeholder={localActive} />
           </SelectTrigger>
-          <SelectContent className="z-">
+          <SelectContent className="z-10">
             <SelectItem
               value="en"
               className="text-brandPrimary hover:bg-brandPrimary rounded-md hover:text-sky-700 cursor-pointer"
@@ -62,14 +62,14 @@ export default function LocalSwitcher() {
 
       <div className="flex justify-between lg:hidden">
         <button
-          className="flex justify-center items-center  w-full bg-[#421957] text-base font-bold text-white p-2"
+          className="flex justify-center items-center  w-full bg-[#421957] text-base font-bold text-white p-1"
           onClick={() => onSelectChange("en")}
           disabled={isPending}
         >
           English
         </button>
         <button
-          className="flex justify-center items-center  w-full bg-[#EEDDF5] text-base font-bold text-[#421957] p-2"
+          className="flex justify-center items-center  w-full bg-[#EEDDF5] text-base font-bold text-[#421957] p-1"
           onClick={() => onSelectChange("bn")}
           disabled={isPending}
         >
