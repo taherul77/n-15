@@ -92,18 +92,18 @@ export function NavbarTop() {
           </div>
         </div>
       </div>
-      <Navbar className="top-10" />
+      <Navbar className="top-10" locale={locale} />
     </div>
   );
 }
 
-function Navbar({ className }: { className?: string }) {
+function Navbar({ className, locale }: { className?: string; locale: string }) {
   const [active, setActive] = useState<string | null>(null);
   const logo = "/assets/logo/ditital_logo.png";
   return (
     <div
       className={cn(
-        "fixed top-10 inset-x-0 max-w-6xl mx-auto z-50 backdrop-blur-lg",
+        "fixed top-10 inset-x-0 max-w-6xl mx-auto z-50 backdrop-blur-lg shadow-xl",
         className
       )}
     >
@@ -113,10 +113,10 @@ function Navbar({ className }: { className?: string }) {
         </div>
         <div className="flex justify-between items-center gap-5">
           <div>
-            <Link href="/">Home</Link>
+            <Link href="/home">Home</Link>
           </div>
           <div>
-            <Link href="/">About Us</Link>
+            <Link href={`/${locale}/about`}>About Us</Link>
           </div>
           <div>
             <Link href="/services">Services</Link>

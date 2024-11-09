@@ -6,7 +6,7 @@ const Project = ({cards}:projectProps) => {
 
   return (
     <div>
-       <FocusCards cards={cards} />;
+       <FocusCards cards={cards} />
     </div>
   )
 }

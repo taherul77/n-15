@@ -6,6 +6,8 @@ import Awards from "./Awards/Awards";
 import Project from "./Projects/Project";
 import Services from "./Services/Services";
 
+
+
 const HomeComponents = () => {
   const items = [
     {
@@ -52,7 +54,7 @@ const HomeComponents = () => {
     },
   ];
   return (
-    <div>
+    <div >
       <HomeNavigation />
       <div className="flex justify-center items-center">
         <Section heading="Our Services" />
@@ -73,6 +75,8 @@ const HomeComponents = () => {
         <Section heading="Our Project" />
       </div>
       <Project cards={cards} />
+    
+     
     </div>
   );
 };
