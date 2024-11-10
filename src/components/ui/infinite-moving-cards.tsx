@@ -4,20 +4,24 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-export const InfiniteMovingCards = ({
+interface Item {
+  url: string;
+}
+
+interface InfiniteMovingCardsProps {
+  items: Item[];
+  direction?: "left" | "right";
+  speed?: "fast" | "normal" | "slow";
+  pauseOnHover?: boolean;
+  className?: string;
+}
+
+export const InfiniteMovingCards: React.FC<InfiniteMovingCardsProps> = ({
   items,
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
   className,
-}: {
-  items: {
-   url
-  }[];
-  direction?: "left" | "right";
-  speed?: "fast" | "normal" | "slow";
-  pauseOnHover?: boolean;
-  className?: string;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
@@ -86,11 +90,10 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="w-[350px] max-w-full bg-white flex justify-center items-center relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 "
-         
+            className="w-[350px] max-w-full hover:shadow-xl bg-white flex justify-center items-center relative rounded-2xl border  flex-shrink-0 border-slate-700 "
             key={item.url}
           >
-           <Image height={80} width={200} src={item.url} alt="" className="bg-white"></Image>
+            <Image height={80} width={200} src={item.url} alt="" className="bg-white"></Image>
           </li>
         ))}
       </ul>
