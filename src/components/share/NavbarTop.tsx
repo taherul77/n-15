@@ -1,30 +1,37 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
+import { 
+  // HoveredLink,
+   Menu,
+    // MenuItem,
+    //  ProductItem
+     } from "../ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { FaChevronRight } from "react-icons/fa";
 import { CiPhone } from "react-icons/ci";
 
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale,
+  //  useTranslations
+   } from "next-intl";
 import Link from "next/link";
 
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import Image from "next/image";
-import LocalSwitcher from "../ui/LocalSwitcher";
+// import LocalSwitcher from "../ui/LocalSwitcher";
 export function NavbarTop() {
-  const [mobileNav, setMobileNav] = useState<boolean>(false);
+  // const [mobileNav, setMobileNav] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const t = useTranslations("Navbar");
+  // const t = useTranslations("Navbar");
   const locale = useLocale();
-  const pathName = usePathname().toString();
-  const logo = "/assets/logo/ditital_logo.png";
-  const handleMobileSidebar = () => {
-    setMobileNav(!mobileNav);
-  };
+  // const pathName = usePathname().toString();
+  // const logo = "/assets/logo/ditital_logo.png";
+  // const handleMobileSidebar = () => {
+  //   setMobileNav(!mobileNav);
+  // };
 
-  useEffect(() => {
-    setMobileNav(false);
-  }, [pathName]);
+  // useEffect(() => {
+  //   setMobileNav(false);
+  // }, [pathName]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -99,6 +106,8 @@ export function NavbarTop() {
 
 function Navbar({ className, locale }: { className?: string; locale: string }) {
   const [active, setActive] = useState<string | null>(null);
+  console.log(active);
+  
   const logo = "/assets/logo/ditital_logo.png";
   return (
     <div

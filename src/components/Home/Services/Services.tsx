@@ -1,19 +1,12 @@
-import { cn } from "@/lib/utils";
+
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { FaCogs,FaMobileAlt } from "react-icons/fa";
 import { TbWorldCog } from "react-icons/tb";
 import { CiMobile1 } from "react-icons/ci";
-import {
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
+
 const Services = () => {
-  const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
-  );
+
   const items = [
     {
       title: "The Dawn of Innovation",

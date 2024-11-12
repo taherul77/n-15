@@ -1,5 +1,9 @@
+"use client";
+import dynamic from 'next/dynamic'
+const HomeNavigation = dynamic(() => import('./HomeNavigation/HomeNavigation'), { ssr: false })
+ 
 import React from "react";
-import HomeNavigation from "./HomeNavigation/HomeNavigation";
+
 import Section from "../share/Section";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import Awards from "./Awards/Awards";
@@ -55,6 +59,7 @@ const HomeComponents = () => {
   ];
   return (
     <div >
+     
       <HomeNavigation />
       <div className="flex justify-center items-center">
         <Section heading="Our Services" />

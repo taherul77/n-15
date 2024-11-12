@@ -22,28 +22,28 @@ export const AboutUs = () => {
         <div className="grid grid-cols-4">
           <div className="col-span-2">
             <div className=" flex flex-col px-4 py-8 gap-5">
-              <div className=" text-left tracking-tight text-[#DE6A1A] font-bold dark:text-white text-4xl md:leading-snug">
+              <div className=" text-left tracking-tight text-[#DE6A1A] font-bold  text-4xl md:leading-snug">
                 About Us
               </div>
-              <div className=" text-left tracking-tight text-black font-bold dark:text-white text-4xl md:leading-snug">
-                About DigitalRun And It's Innovative IT Solutions
+              <div className=" text-left tracking-tight text-black font-bold  text-4xl md:leading-snug">
+                About DigitalRun And It&apos;s Innovative IT Solutions
               </div>
-              <div className=" text-neutral-700  font-normal dark:text-neutral-300 text-left">
+              <div className=" text-neutral-700  font-normal  text-left">
                 Welcome to DigitalRun, the driving force behind digital
-                evolution. We're not just a software company; we're architects
+                evolution. We&apos;re not just a software company; we&apos;re architects
                 of innovation, sculpting bespoke solutions to propel businesses
                 to new heights. At DigitalRun, we thrive on the synergy of
                 passion and expertise. Our team of tech virtuosos is committed
-                to redefining norms and exceeding your expectations. We're not
-                just here to meet your needs; we're here to anticipate them.
+                to redefining norms and exceeding your expectations. We&apos;re not
+                just here to meet your needs; we&apos;re here to anticipate them.
               </div>
-              <div className=" text-neutral-700  font-normal dark:text-neutral-300 text-left">
+              <div className=" text-neutral-700  font-normal  text-left">
                 Why choose us? Because we believe in crafting success stories,
                 not just software. Our journey is marked by a relentless pursuit
                 of excellence, guided by values of integrity, transparency, and
                 an unwavering commitment to your success. Ready to embark on a
                 transformative journey? Join us at DigitalRun, where each line
-                of code is a step towards a future where your business doesn't
+                of code is a step towards a future where your business doesn&apos;t
                 just adapt but thrives
               </div>
             </div>
@@ -73,27 +73,27 @@ const FeatureCard = ({
   );
 };
 
-const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
-  return (
-    <p className=" text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
-      {children}
-    </p>
-  );
-};
+// const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
+//   return (
+//     <p className=" text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+//       {children}
+//     </p>
+//   );
+// };
 
-const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
-  return (
-    <p
-      className={cn(
-        "text-sm md:text-base text-left mx-auto",
-        "text-neutral-500 text-center font-normal dark:text-neutral-300",
-        "text-left max-w-sm mx-0 md:text-sm my-2"
-      )}
-    >
-      {children}
-    </p>
-  );
-};
+// const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
+//   return (
+//     <p
+//       className={cn(
+//         "text-sm md:text-base text-left mx-auto",
+//         "text-neutral-500 text-center font-normal ",
+//         "text-left max-w-sm mx-0 md:text-sm my-2"
+//       )}
+//     >
+//       {children}
+//     </p>
+//   );
+// };
 
 export const SkeletonFour = () => {
   return (
