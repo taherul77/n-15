@@ -6,6 +6,7 @@ import { SlSocialYoutube } from "react-icons/sl";
 import EnterButton from "@/components/share/EnterButton";
 import { useEffect, useState } from "react";
 import { useLocale } from "next-intl";
+// import { TextHoverEffect } from "../ui/text-hover-effect";
 
 const Welcome = () => {
     const [img, setImg] = useState("");
@@ -19,6 +20,14 @@ const Welcome = () => {
     <div>
        <div className="bg-[#E4E4E6] futura relative">
       <div className="h-screen overflow-hidden">
+
+      {/* <div className="h-[40rem] flex items-center justify-center">
+      <TextHoverEffect text="ACET" />
+    </div> */}
+
+
+
+
         <div
           className="bg-clip-text bg-cover text-transparent flex h-full w-full uppercase"
           style={{ backgroundImage: img }}

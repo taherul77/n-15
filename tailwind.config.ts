@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // tailwind.config.js
 module.exports = {
     darkMode: ["class"],
@@ -70,6 +71,39 @@ module.exports = {
     		}
     	}
     },
-	plugins: [import("tailwindcss-animate")],
+	plugins: [import("tailwindcss-animate")],addVariablesForColors,
   };
   
+
+
+
+
+  function addVariablesForColors({ addBase, theme }: any) {
+	const allColors = flattenColorPalette(theme("colors"));
+	const newVars = Object.fromEntries(
+	  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+	);
+   
+	addBase({
+	  ":root": newVars,
+	});
+  }
+
+function flattenColorPalette(colors: any) {
+	const result: any = {};
+
+	function recurse(obj: any, current: string) {
+		for (const key in obj) {
+			const value = obj[key];
+			const newKey = current ? `${current}-${key}` : key;
+			if (typeof value === 'object' && value !== null) {
+				recurse(value, newKey);
+			} else {
+				result[newKey] = value;
+			}
+		}
+	}
+
+	recurse(colors, '');
+	return result;
+}
