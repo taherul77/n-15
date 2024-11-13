@@ -1,0 +1,4 @@
+git fetch origin
+git checkout taherul
+git fetch origin
+git pull origin taherul
