@@ -6,7 +6,7 @@ import { SlSocialYoutube } from "react-icons/sl";
 import EnterButton from "@/components/share/EnterButton";
 import { useEffect, useState } from "react";
 import { useLocale } from "next-intl";
-// import { TextHoverEffect } from "../ui/text-hover-effect";
+import { TextHoverEffect } from "../ui/text-hover-effect";
 
 const Welcome = () => {
     const [img, setImg] = useState("");
