@@ -35,7 +35,7 @@ export const AboutUs = () => {
                 to new heights. At DigitalRun, we thrive on the synergy of
                 passion and expertise. Our team of tech virtuosos is committed
                 to redefining norms and exceeding your expectations. We&apos;re not
-                just here to meet your needs; we&apos;re here to anticipate them.
+                just here to meet your      h needs; we&apos;re here to anticipate them.
               </div>
               <div className=" text-neutral-700  font-normal  text-left">
                 Why choose us? Because we believe in crafting success stories,
