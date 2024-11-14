@@ -1,7 +1,10 @@
 "use client";
-import dynamic from 'next/dynamic'
-const HomeNavigation = dynamic(() => import('./HomeNavigation/HomeNavigation'), { ssr: false })
- 
+import dynamic from "next/dynamic";
+const HomeNavigation = dynamic(
+  () => import("./HomeNavigation/HomeNavigation"),
+  { ssr: false }
+);
+
 import React from "react";
 
 import Section from "../share/Section";
@@ -9,8 +12,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import Awards from "./Awards/Awards";
 import Project from "./Projects/Project";
 import Services from "./Services/Services";
-
-
+import TestimonialsComponent from "./Testimonials/TestimonialsComponent";
 
 const HomeComponents = () => {
   const items = [
@@ -58,8 +60,7 @@ const HomeComponents = () => {
     },
   ];
   return (
-    <div >
-     
+    <div>
       <HomeNavigation />
       <div className="flex justify-center items-center">
         <Section heading="Our Services" />
@@ -80,8 +81,8 @@ const HomeComponents = () => {
         <Section heading="Our Project" />
       </div>
       <Project cards={cards} />
-    
-     
+
+      <TestimonialsComponent />
     </div>
   );
 };
