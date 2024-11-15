@@ -3,6 +3,8 @@ import { AnimatedTestimonials } from '@/components/ui/animated-testimonials';
 import React, { useEffect, useState } from 'react'
 
 const TestimonialsComponent = () => {
+
+  
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
