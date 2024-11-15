@@ -29,7 +29,7 @@ export const AnimatedTestimonials = ({
 
   useEffect(() => {
     if (autoplay) {
-      const interval = setInterval(handleNext, 2000);
+      const interval = setInterval(handleNext, 4000);
       return () => clearInterval(interval);
     }
   }, [autoplay, handleNext]);
@@ -108,13 +108,13 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold dark:text-white text-black">
+            <h3 className="text-4xl font-bold text-[#DE6A1A]">
               {testimonials[active].name}
             </h3>
             <p className="text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
-            <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300 line-clamp-4">
+            <motion.p className="text-lg text-gray-700 py-4 dark:text-neutral-300 line-clamp-7">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}

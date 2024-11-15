@@ -15,14 +15,14 @@ const TestimonialsComponent = () => {
       name: "Asif Arafat Islam",
       designation:
         "Executive Director, Marketing & Business Development Karnafuly Ship Builders Limited",
-      src: "https://digitalrun.biz/uploads/testimonials/Asif%20Arafat%20Islam_20241105_050210.jpg",
+      src: "https://media.licdn.com/dms/image/v2/D560BAQFkM3xGv7B5Yw/company-logo_200_200/company-logo_200_200/0/1716024718688?e=1740009600&v=beta&t=ECC8FdMifVv_fNNmc6NUjK118V2VoN9Gr9EXqhm2ldE",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Digital Run Limited has been an exceptional partner in driving our software solutions to new heights. Their expertise in innovative technology, combined with a commitment to delivering tailored solutions, has consistently surpassed our expectations.",
+      name: "Ariful Islam",
+      designation: "Managing Director Trust Machinaries.",
+      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       quote:
@@ -38,13 +38,7 @@ const TestimonialsComponent = () => {
       designation: "Engineering Lead at DataPro",
       src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+ 
   ];
   if (!isClient) {
     return null;

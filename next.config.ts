@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['digitalrun.biz','images.unsplash.com'], // Allow images from digitalrun.biz
+    domains: ['digitalrun.biz','images.unsplash.com','media.licdn.com'], // Allow images from digitalrun.biz
   },
 };
 
