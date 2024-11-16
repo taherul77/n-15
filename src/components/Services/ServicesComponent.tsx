@@ -8,9 +8,9 @@ import Section from "../share/Section";
 const ServicesComponent = () => {
   const images1 = "/images/image1.PNG";
   const images2 = "/images/image2.PNG";
-  const images3 = "/images/image3.jpg";
-  const images4 = "/images/image4.jpg";
-  const images5 = "/images/image5.jpg";
+  const images3 = "/images/image3.png";
+  const images4 = "/images/image4.png";
+  const images5 = "/images/image5.png";
   const images6 = "/images/image6.jpg";
   const images7 = "/images/image7.jpg";
   const images8 = "/images/image8.jpg";
@@ -58,19 +58,19 @@ const ServicesComponent = () => {
             ></ExpertiseSectionImageLeft>
 
             <ExpertiseSection
-              title={"Cyber"}
+              title={"Web"}
               subTitle={"security"}
               subSubTitle={
-                "Offering services to secure digital assets, protect against cyber threats, and ensure data privacy. "
+                "Our company is your go-to resource for web security, offering valuable insights and practical tips to protect your online assets. From understanding threats to implementing effective measures, we provide essential information for website owners and users alike. "
               }
             ></ExpertiseSection>
           </div>
           <div className="flex flex-col-reverse md:flex-row  gap-10 justify-center items-center py-8 ">
             <ExpertiseSection
-              title={"Networking "}
-              subTitle={"Solutions"}
+              title={"Web Application "}
+              subTitle={"Development"}
               subSubTitle={
-                "Designing and implementing network infrastructure for seamless communication. "
+                "Digital Run is a cutting-edge web application service designed to create dynamic, user-friendly, and responsive web applications tailored to meet the specific needs of businesses across various industries. With a focus on enhancing user experience and optimizing operational efficiency, leverages modern web technologies and best practices to deliver robust solutions that drive engagement and growth. "
               }
             ></ExpertiseSection>
             <ExpertiseSectionImageRight
@@ -83,8 +83,8 @@ const ServicesComponent = () => {
             ></ExpertiseSectionImageLeft>
 
             <ExpertiseSection
-              title={"Web "}
-              subTitle={"Development"}
+              title={"Web Site "}
+              subTitle={"Making and Design "}
               subSubTitle={
                 "Designing and developing websites and web applications. "
               }
