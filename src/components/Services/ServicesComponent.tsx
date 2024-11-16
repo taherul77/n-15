@@ -12,7 +12,7 @@ const ServicesComponent = () => {
   const images4 = "/images/image4.png";
   const images5 = "/images/image5.png";
   const images6 = "/images/image6.png";
-  const images7 = "/images/image7.jpg";
+  const images7 = "/images/image7.png";
   const images8 = "/images/image8.jpg";
 
   return (
