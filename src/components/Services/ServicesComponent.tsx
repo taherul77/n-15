@@ -11,7 +11,7 @@ const ServicesComponent = () => {
   const images3 = "/images/image3.png";
   const images4 = "/images/image4.png";
   const images5 = "/images/image5.png";
-  const images6 = "/images/image6.jpg";
+  const images6 = "/images/image6.png";
   const images7 = "/images/image7.jpg";
   const images8 = "/images/image8.jpg";
 
