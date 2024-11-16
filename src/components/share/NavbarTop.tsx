@@ -145,10 +145,10 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
             <Link href="/contact">Contact</Link>
           </div>
           <div>
-            <Link href="/">Career</Link>
+            <Link href="/career">Career</Link>
           </div>
           <div>
-            <Link href="/">Our Team</Link>
+            <Link href="/team">Our Team</Link>
           </div>
           <div>
             <Link href="/testimonial">Testimonial</Link>
