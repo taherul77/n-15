@@ -5,9 +5,9 @@ const Home = () => {
   const t = useTranslations("Navbar");
   // const locale = useLocale();
   return (
-    <>
+    <div className="max-w-6xl mx-auto min-h-screen">
       <HomeComponents />
-    </>
+    </div>
   );
 };
 

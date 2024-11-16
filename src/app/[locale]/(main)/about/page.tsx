@@ -3,7 +3,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div  className=' py-32'>
+    <div  className='max-w-6xl mx-auto min-h-screen py-32'>
       <About />
     </div>
   )
