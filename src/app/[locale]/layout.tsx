@@ -3,25 +3,22 @@ import "../globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
 export const metadata: Metadata = {
-	title: "A",
-	description: "A",
+  title: "A",
+  description: "A",
 };
 
 export default function LocaleLayout({
-	children,
-	params: { locale },
+  children,
+  params: {},
 }: {
-	children: React.ReactNode;
-	params: { locale: string };
+  children: React.ReactNode;
+  params: { locale: string };
 }) {
-	const messages = useMessages();
+  const messages = useMessages();
 
-	return (
-	
-			
-				<NextIntlClientProvider messages={messages}>
-					{children}
-				</NextIntlClientProvider>
-			
-	);
+  return (
+    <NextIntlClientProvider messages={messages}>
+      {children}
+    </NextIntlClientProvider>
+  );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { NavbarTop } from "@/components/share/NavbarTop";
-import Navbar from "@/components/ui/Navbar/Navbar";
+// import Navbar from "@/components/ui/Navbar/Navbar";
 import { store } from "@/redux/Store/Store";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React, { ReactNode } from "react";
