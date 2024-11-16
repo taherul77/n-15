@@ -1,9 +1,10 @@
+import { Background } from '@/components/Background'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      contact
+    <div className='max-w-6xl'>
+      <Background />
     </div>
   )
 }
