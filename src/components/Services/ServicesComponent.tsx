@@ -33,6 +33,10 @@ const ServicesComponent = () => {
             <ExpertiseSection
               title={"Business Process Automation."}
               subTitle={"(BPA)"}
+          
+                className2="flex"
+                translateX={"translateX(200px)"}
+              
               subSubTitle={
                 "We Collect Requirement or .identify your business pain point and provide best automation solution for your organization."
               }

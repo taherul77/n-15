@@ -1,10 +1,14 @@
+"use client"
 import { ExpertiseSectionProps } from "@/types";
-import React from "react";
+
+import SectionEnimation from "./SectionEnimation";
 
 // Define ExpertiseSection component which accepts title, subTitle, and subSubTitle as props
 const ExpertiseSection = ({
   title,
   subTitle,
+  className2,
+  translateX,
   subSubTitle,
 }: ExpertiseSectionProps) => {
   return (
@@ -17,8 +21,10 @@ const ExpertiseSection = ({
         {/* Subtitle with bold font */}
         <span className="font-bold text-2xl">{subTitle}</span>
       </h1>
-      {/* SubSubtitle */}
-      <p className="uppercase text-black pl-2 ">{subSubTitle}</p>
+
+
+      <SectionEnimation translateX={translateX} className2={className2}>{subSubTitle}</SectionEnimation>
+      {/* <p className="uppercase text-black pl-2 ">{subSubTitle}</p> */}
     </div>
   );
 };

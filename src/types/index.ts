@@ -24,6 +24,8 @@ export interface ExpertiseProps {
 // Interface for the ExpertiseSection component props with optional properties
 export interface ExpertiseSectionProps {
   title?: string; // Optional title
+  className2?:string;
+  translateX?:string;
   subTitle?: string; // Optional subtitle
   subSubTitle?: string | undefined; // Optional subsubtitle, can be undefined
 }
