@@ -81,8 +81,13 @@ const HomeComponents = () => {
         <Section heading="Our Project" />
       </div>
       <Project cards={cards} />
-
+      <div className="flex justify-center items-center">
+        <Section heading="Our Testimonial" />
+      </div>
+      <div className="pb-10">
       <TestimonialsComponent />
+      </div>
+      
     </div>
   );
 };

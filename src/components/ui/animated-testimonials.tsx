@@ -39,7 +39,7 @@ export const AnimatedTestimonials = ({
   };
 
   return (
-    <div className="max-w-sm md:max-w-6xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
+    <div className="max-w-sm md:max-w-6xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-2 py-5">
       <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
         <div className="col-span-1">
           <div className="relative h-80 w-full">
@@ -108,7 +108,7 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-4xl font-bold text-[#DE6A1A]">
+            <h3 className="text-4xl font-bold text-[#4b1e7f]">
               {testimonials[active].name}
             </h3>
             <p className="text-sm text-gray-500 dark:text-neutral-500">

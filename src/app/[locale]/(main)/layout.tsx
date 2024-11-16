@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/share/Footer/Footer";
 import { NavbarTop } from "@/components/share/NavbarTop";
 // import Navbar from "@/components/ui/Navbar/Navbar";
 import { store } from "@/redux/Store/Store";
@@ -20,6 +21,7 @@ function layout({ children }: { children: ReactNode }) {
               <div className="">{children}</div>
             </div>
           </div>
+          <Footer />
         </div>
       </QueryClientProvider>
     </Provider>
