@@ -144,7 +144,7 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
             <Link href="/">Our Team</Link>
           </div>
           <div>
-            <Link href="/">Testimonial</Link>
+            <Link href="/testimonial">Testimonial</Link>
           </div>
 
           {/* <MenuItem setActive={setActive} active={active} item="Pricing">
