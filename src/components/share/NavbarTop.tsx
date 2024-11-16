@@ -7,7 +7,8 @@ import {
     //  ProductItem
      } from "../ui/navbar-menu";
 import { cn } from "@/lib/utils";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight,FaFacebookF,FaLinkedin } from "react-icons/fa";
+
 import { CiPhone } from "react-icons/ci";
 
 import { useLocale,
@@ -82,18 +83,24 @@ export function NavbarTop() {
                 <FaChevronRight />
               </div>
             </div>
-            <div className="flex">
+            <div className="flex gap-2">
               <div className="flex items-center gap-2 hover:text-gray-500 ">
                 <div>
                   <CiPhone />
                 </div>
                 <div className="font-bold">8801322278645</div>
               </div>
+              <hr/>
               <div className="flex items-center gap-2 hover:text-gray-500 ">
-                <div>
-                  <CiPhone />
+               
+                <div className="font-bold">Follow us on
                 </div>
-                <div className="font-bold">8801322278645</div>
+                <div>
+                  <FaFacebookF />
+                </div>
+                <div>
+                  <FaLinkedin />
+                </div>
               </div>
             </div>
           </div>
@@ -144,7 +151,7 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
             <Link href="/">Our Team</Link>
           </div>
           <div>
-            <Link href="/">Testimonial</Link>
+            <Link href="/testimonial">Testimonial</Link>
           </div>
 
           {/* <MenuItem setActive={setActive} active={active} item="Pricing">
