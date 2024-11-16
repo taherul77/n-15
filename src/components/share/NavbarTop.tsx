@@ -139,10 +139,10 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
           </div>
 
           <div>
-            <Link href="/">Blog</Link>
+            <Link href="/blog">Blog</Link>
           </div>
           <div>
-            <Link href="/">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </div>
           <div>
             <Link href="/">Career</Link>
