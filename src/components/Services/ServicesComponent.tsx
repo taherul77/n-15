@@ -4,7 +4,7 @@ import ExpertiseSectionImageLeft from "./ExpertiseSectionImageLeft";
 import ExpertiseSection from "./ExpertiseSection";
 import ExpertiseSectionImageRight from "./ExpertiseSectionImageRight";
 import Section from "../share/Section";
-
+import "./expertise.css"
 const ServicesComponent = () => {
   const images1 = "/images/image1.PNG";
   const images2 = "/images/image2.PNG";
@@ -16,7 +16,8 @@ const ServicesComponent = () => {
 
   return (
     <div>
-      <div className="content-container bg-center bg-cover bg-no-repeat">
+      <div className="content-container bg-center bg-cover bg-no-repeat py-16">
+        <div className="max-w-6xl mx-auto min-h-screen"> 
         <div className="flex justify-center items-center">
           <Section heading="Our Services" />
         </div>
@@ -111,6 +112,8 @@ const ServicesComponent = () => {
           </div>
          
         </ExpertiessWrapper>
+        </div>
+        
       </div>
     </div>
   );
