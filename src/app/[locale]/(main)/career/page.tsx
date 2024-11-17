@@ -1,8 +1,12 @@
-"use client"
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { HiOutlineLocationMarker, HiOutlineUserAdd, HiOutlineMail } from 'react-icons/hi';
-import { useMediaQuery } from 'react-responsive';
+"use client";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  HiOutlineLocationMarker,
+  HiOutlineUserAdd,
+  HiOutlineMail,
+} from "react-icons/hi";
+import { useMediaQuery } from "react-responsive";
 const ExpandableCard1 = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -12,7 +16,7 @@ const ExpandableCard1 = () => {
   };
 
   const handleClose = (e: React.MouseEvent<HTMLDivElement>) => {
-    if ((e.target as HTMLElement).id === 'overlay') {
+    if ((e.target as HTMLElement).id === "overlay") {
       setIsExpanded(false);
     }
   };
@@ -35,30 +39,46 @@ const ExpandableCard1 = () => {
 
       <motion.div
         layout
-        className={`bg-white shadow-lg rounded-lg p-6 z-50 mx-6 ${isExpanded ? 'cursor-default' : 'cursor-pointer'}`}
+        className={`bg-white shadow-lg rounded-lg p-6 z-50 mx-6 ${
+          isExpanded ? "cursor-default" : "cursor-pointer"
+        }`}
         onClick={!isExpanded ? handleToggle : undefined}
         initial={false}
         animate={{
-          width: isExpanded ? (isMobile ? '350px' : '400px') : '300px',
-          height: isExpanded ? '330px' : '120px',
+          width: isExpanded ? (isMobile ? "350px" : "400px") : "300px",
+          height: isExpanded ? "330px" : "120px",
         }}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
-        <div className={`flex ${isExpanded ? 'flex-col items-center' : 'items-center'}`}>
+        <div
+          className={`flex ${
+            isExpanded ? "flex-col items-center" : "items-center"
+          }`}
+        >
           <motion.img
             src="https://res.cloudinary.com/dl2adjye7/image/upload/v1714420184/1698251861492_e4wiyn.jpg"
             alt="Avatar"
             className="rounded-full shadow-md"
             initial={false}
             animate={{
-              width: isExpanded ? '80px' : '64px',
-              height: isExpanded ? '80px' : '64px',
+              width: isExpanded ? "80px" : "64px",
+              height: isExpanded ? "80px" : "64px",
             }}
-            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
           />
-          <div className={`${isExpanded ? 'text-center mt-4' : 'text-left'} ${isExpanded ? 'ml-0' : 'ml-4'}`}>
-            <motion.h2 className="text-lg font-semibold">Alexandre Buée</motion.h2>
-            <div className={`flex items-center ${isExpanded ? 'justify-center' : 'justify-start'} text-gray-600 mt-1`}>
+          <div
+            className={`${isExpanded ? "text-center mt-4" : "text-left"} ${
+              isExpanded ? "ml-0" : "ml-4"
+            }`}
+          >
+            <motion.h2 className="text-lg font-semibold">
+              Alexandre Buée
+            </motion.h2>
+            <div
+              className={`flex items-center ${
+                isExpanded ? "justify-center" : "justify-start"
+              } text-gray-600 mt-1`}
+            >
               <HiOutlineLocationMarker className="text-teal-500 mr-1" />
               <motion.span>Paris, France</motion.span>
             </div>
@@ -94,19 +114,14 @@ const ExpandableCard1 = () => {
 const page = () => {
   return (
     <div>
-         <div className="h-screen text-center">
-      <ExpandableCard1 />
+      <div className="h-screen text-center">
+        <ExpandableCard1 />
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default page
-
-
-
-
-
+export default page;
 
 // import React, { useState, useEffect } from 'react';
 // import { motion, AnimatePresence } from 'framer-motion';
@@ -223,12 +238,9 @@ export default page
 //       <CustomCursor2 isVisible={cursorVisible} />
 //       <div className="p-0">
 //         <CustomCard2 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
-     
+
 //       </div>
 //       <CustomCursorCard2></CustomCursorCard2>
 //     </div>
 //   );
 // };
-
-
-          

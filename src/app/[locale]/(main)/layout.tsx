@@ -14,7 +14,7 @@ function layout({ children }: { children: ReactNode }) {
   return (
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
-        <div className="max-w-screen min-h-screen  bg-gray-50 ">
+        <div className="max-w-screen min-h-screen  bg-white ">
           <NavbarTop />
           <div>
             <div className="">
