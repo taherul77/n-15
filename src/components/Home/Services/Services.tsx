@@ -16,7 +16,6 @@ const Services = () => {
     {
       title: "The Digital Revolution",
       description: "Dive into the transformative power of technology.",
-
       className: "md:col-span-1",
       icon: <FaMobileAlt className="h-4 w-4 " />,
     },
@@ -31,7 +30,6 @@ const Services = () => {
       title: "The Power of Communication",
       description:
         "Understand the impact of effective communication in our lives.",
-
       className: "md:col-span-1",
       icon: <CiMobile1 className="h-4 w-4 " />,
     },
@@ -39,7 +37,6 @@ const Services = () => {
       title: "The Power of Communication",
       description:
         "Understand the impact of effective communication in our lives.",
-
       className: "md:col-span-1",
       icon: <CiMobile1 className="h-4 w-4 " />,
     },
@@ -47,7 +44,6 @@ const Services = () => {
       title: "The Power of Communication",
       description:
         "Understand the impact of effective communication in our lives.",
-
       className: "md:col-span-1",
       icon: <CiMobile1 className="h-4 w-4 " />,
     },
