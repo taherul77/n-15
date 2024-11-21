@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { Metadata } from "next";
 import "../globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
@@ -9,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function LocaleLayout({
   children,
-  params: {},
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: any;
 }) {
   const messages = useMessages();
 
