@@ -66,7 +66,7 @@ const HomeComponents = () => {
       <div className="flex justify-center items-center">
         <Section heading="Our Services" />
       </div>
-      <div>
+      <div className="flex justify-center items-center">
         <ExpandableCard />
       </div>
       <div className="flex justify-center items-center">
