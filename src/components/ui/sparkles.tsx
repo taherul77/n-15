@@ -93,6 +93,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 },
               },
             },
+            
             particles: {
               bounce: {
                 horizontal: {
