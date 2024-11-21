@@ -11,8 +11,9 @@ import Section from "../share/Section";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import Awards from "./Awards/Awards";
 import Project from "./Projects/Project";
-import Services from "./Services/Services";
+// import Services from "./Services/Services";
 import TestimonialsComponent from "./Testimonials/TestimonialsComponent";
+import ExpandableCard from "../share/ExpandableCard/ExpandableCard";
 
 const HomeComponents = () => {
   const items = [
@@ -66,7 +67,7 @@ const HomeComponents = () => {
         <Section heading="Our Services" />
       </div>
       <div>
-        <Services />
+        <ExpandableCard />
       </div>
       <div className="flex justify-center items-center">
         <Section heading="Our Clients" />
