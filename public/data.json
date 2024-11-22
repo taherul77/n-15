@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "title": "Senior Executive - Business Development",
+      "description": "A leading IT company specializing in innovative technology solutions, is seeking a highly motivated and dynamic individual to join our team as a Senior Executive - Business Development. This is an excellent opportunity for an experienced professional with a proven track record in driving business growth and building strategic partnerships within the IT industry.",
+      "price": "$100",
+      "imageUrl": "https://example.com/image1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Software Engineer",
+      "description": "We are looking for a skilled Software Engineer to join our team. The ideal candidate will have experience in developing scalable software solutions and a passion for technology.",
+      "price": "$120",
+      "imageUrl": "https://example.com/image2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Product Manager",
+      "description": "Join our team as a Product Manager and help us drive the development of innovative products. You will work closely with cross-functional teams to define product vision and strategy.",
+      "price": "$150",
+      "imageUrl": "https://example.com/image3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "UX/UI Designer",
+      "description": "We are seeking a talented UX/UI Designer to create intuitive and engaging user experiences. The ideal candidate will have a strong portfolio showcasing their design skills.",
+      "price": "$110",
+      "imageUrl": "https://example.com/image4.jpg"
+    }
+  ]
