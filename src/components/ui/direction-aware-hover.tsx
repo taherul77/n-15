@@ -66,7 +66,7 @@ export const DirectionAwareHover = ({
       onMouseEnter={handleMouseEnter}
       ref={ref}
       className={cn(
-        "md:h-96 w-full h-60 max-w-[1000px] bg-transparent rounded-lg overflow-hidden group/card relative",
+        "max-h-[500px] w-full  max-w-[1000px] bg-transparent  rounded-xl overflow-hidden group/card relative",
         className
       )}
     >
@@ -77,10 +77,10 @@ export const DirectionAwareHover = ({
           whileHover={direction}
           exit="exit"
         >
-          <motion.div className="group-hover/card:block hidden absolute inset-0 w-full h-full bg-black/40 z-10 transition duration-500" />
+          <motion.div className="group-hover/card:block hidden absolute inset-0 w-full rounded-xl h-full bg-black/40 z-10 transition duration-500" />
           <motion.div
             variants={variants}
-            className="h-full w-full relative bg-gray-50 dark:bg-black"
+            className="h-full w-full rounded-xl relative bg-gray-50 dark:bg-black"
             transition={{
               duration: 0.2,
               ease: "easeOut",
@@ -89,7 +89,7 @@ export const DirectionAwareHover = ({
             <Image
               alt="image"
               className={cn(
-                "h-full w-full object-cover scale-[1.15]",
+                "h-full w-full rounded-xl object-cover scale-[1.15]",
                 imageClassName
               )}
               width="1000"
@@ -97,22 +97,21 @@ export const DirectionAwareHover = ({
               src={imageUrl}
             />
           </motion.div>
-        
         </motion.div>
       </AnimatePresence>
       <motion.div
-            variants={textVariants}
-            transition={{
-              duration: 0.5,
-              ease: "easeOut",
-            }}
-            className={cn(
-              "text-white absolute bottom-4 left-4 z-40",
-              childrenClassName
-            )}
-          >
-            {children}
-          </motion.div>
+        variants={textVariants}
+        transition={{
+          duration: 0.5,
+          ease: "easeOut",
+        }}
+        className={cn(
+          "text-white absolute bottom-4 left-4 z-40",
+          childrenClassName
+        )}
+      >
+        {children}
+      </motion.div>
     </motion.div>
   );
 };
