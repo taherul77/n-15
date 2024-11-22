@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
 import Section from "../share/Section";
-
+import { motion } from "framer-motion";
 interface JobItem {
   id: number;
   title: string;
@@ -37,10 +37,14 @@ const CareerComponent = () => {
             <p className="text-sm text-neutral-600 dark:text-neutral-400  line-clamp-6	">
               {item.description}
             </p>
-            <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              className="rounded-full px-4 py-2 text-white flex items-center space-x-1 bg-gradient-to-r from-[#4B1E7F]  to-[#FC6617] mt-4 text-xs font-bold "
+            >
               <span>Apply now</span>
-             
-            </button>
+            </motion.button>
           </BackgroundGradient>
         ))}
       </div>
