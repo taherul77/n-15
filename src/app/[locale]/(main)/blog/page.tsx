@@ -1,6 +1,7 @@
 "use client";
 
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
+
 import Link from "next/link";
 
 const page = () => {
@@ -36,8 +37,12 @@ const page = () => {
   ];
 
   return (
+
+    
     <div className="mx-auto min-h-screen">
+
       <div className="relative flex flex-col items-center justify-center gap-16">
+     
         {items.map((item, index) => (
           <Link key={index} href={`blog/${item.id}`} >
             <DirectionAwareHover imageUrl={item.imageUrl}>
@@ -46,8 +51,10 @@ const page = () => {
             </DirectionAwareHover>
           </Link>
         ))}
+       
       </div>
     </div>
+  
   );
 };
 
