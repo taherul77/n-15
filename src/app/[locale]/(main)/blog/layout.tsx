@@ -9,7 +9,7 @@ function layout({ children }: { children: ReactNode }) {
         <div className="max-w-screen min-h-screen  bg-white ">
         
           <div>
-            <div className="">
+            <div className="py-28">
               <div className="">{children}</div>
             </div>
           </div>

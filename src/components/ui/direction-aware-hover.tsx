@@ -63,6 +63,7 @@ export const DirectionAwareHover = ({
 
   return (
     <motion.div
+    
       onMouseEnter={handleMouseEnter}
       ref={ref}
       className={cn(

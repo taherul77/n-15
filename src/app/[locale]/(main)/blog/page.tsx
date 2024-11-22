@@ -37,9 +37,9 @@ const page = () => {
 
   return (
     <div className="mx-auto min-h-screen">
-      <div className="relative flex flex-col items-center justify-center gap-16 py-28">
+      <div className="relative flex flex-col items-center justify-center gap-16">
         {items.map((item, index) => (
-          <Link key={index} href={`blog/${item.id}`}>
+          <Link key={index} href={`blog/${item.id}`} >
             <DirectionAwareHover imageUrl={item.imageUrl}>
               <p className="font-bold text-xl">{item.title}</p>
               <p className="font-normal text-sm">{item.price}</p>
