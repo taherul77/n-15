@@ -40,7 +40,7 @@ const page = () => {
   return (
     <div className="mx-auto min-h-screen">
       <div className="relative flex flex-col items-center justify-center gap-16">
-        <TracingBeam>
+        <TracingBeam className="px-4">
           {items.map((item, index) => (
             <Link key={index} href={`blog/${item.id}`}>
               <DirectionAwareHover imageUrl={item.imageUrl}>
