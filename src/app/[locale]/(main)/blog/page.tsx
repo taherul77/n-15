@@ -1,7 +1,7 @@
 "use client";
 
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
-import { TracingBeam } from "@/components/ui/tracing-beam";
+// import { TracingBeam } from "@/components/ui/tracing-beam";
 
 import Link from "next/link";
 
@@ -39,7 +39,7 @@ const page = () => {
 
   return (
     <div className="mx-auto min-h-screen">
-      <TracingBeam className="px-4">
+      {/* <TracingBeam className="px-4"> */}
         <div className="relative flex flex-col items-center justify-center gap-16">
           {items.map((item, index) => (
             <Link key={index} href={`blog/${item.id}`}>
@@ -50,7 +50,7 @@ const page = () => {
             </Link>
           ))}
         </div>
-      </TracingBeam>
+      {/* </TracingBeam> */}
     </div>
   );
 };
