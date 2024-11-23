@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
 import Section from "../share/Section";
 import { motion } from "framer-motion";
+import { CareerTop } from "./CareerTop";
 interface JobItem {
   id: number;
   title: string;
@@ -20,7 +21,8 @@ const CareerComponent = () => {
   }, []);
 
   return (
-    <div>
+    <div className="py-10">
+        <CareerTop />
       <div className="flex justify-center items-center">
         <Section heading="Current Job Openings" />
       </div>
