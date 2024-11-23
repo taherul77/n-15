@@ -8,22 +8,22 @@
     },
     {
       "id": 2,
-      "title": "Software Engineer",
-      "description": "We are looking for a skilled Software Engineer to join our team. The ideal candidate will have experience in developing scalable software solutions and a passion for technology.",
+      "title": "Jr. Software Engineer (Java Spring Boot)",
+      "description": "Digital Run Limited, a leading software company, is seeking highly skilled and motivated Spring Boot Developers to join our dynamic team. If you have a passion for software development, expertise in Spring Boot, and at least 6 months of experience in the field, we invite you to apply for this exciting opportunity.",
       "price": "$120",
       "imageUrl": "https://example.com/image2.jpg"
     },
     {
       "id": 3,
-      "title": "Product Manager",
-      "description": "Join our team as a Product Manager and help us drive the development of innovative products. You will work closely with cross-functional teams to define product vision and strategy.",
+      "title": "Software Engineer (PHP Laravel)",
+      "description": "BSc or MSc in Computer Science/Engineering or equivalent.",
       "price": "$150",
       "imageUrl": "https://example.com/image3.jpg"
     },
     {
       "id": 4,
-      "title": "UX/UI Designer",
-      "description": "We are seeking a talented UX/UI Designer to create intuitive and engaging user experiences. The ideal candidate will have a strong portfolio showcasing their design skills.",
+      "title": "AVP / VP of Business Development",
+      "description": "Digital Run Limited, a trailblazing IT company at the forefront of cutting-edge technology solutions, is seeking an ambitious and results-driven individual to join our leadership team as AVP / VP of Business Development. If you have a passion for driving growth, forging strategic partnerships, and delivering exceptional results, this is the perfect opportunity to elevate your career and make a lasting impact within the IT industry.",
       "price": "$110",
       "imageUrl": "https://example.com/image4.jpg"
     }
