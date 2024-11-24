@@ -2,7 +2,6 @@
 
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import { FC } from "react";
 import { motion } from "framer-motion";
 
 // Define the type for a single item
@@ -50,7 +49,7 @@ const items: Item[] = [
   },
 ];
 
-const SingleItemPage: FC = () => {
+const SingleItemPage = () => {
   const { id } = useParams();
 
   // Parse ID and find the corresponding item
@@ -64,20 +63,22 @@ const SingleItemPage: FC = () => {
     <motion.div
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      transition={{ type: "spring", stiffness: 400, damping: 10 }}
-      className="mx-auto max-w-2xl p-6"
+      transition={{ type: "spring", stiffness: 400 }}
+      className="mx-auto flex max-w-5xl p-6 duration-300 hover:shadow-xl rounded-xl gap-10"
     >
       <Image
         src={item.imageUrl}
         alt={item.title}
-        width={800}
+        width={500}
         height={400}
-        
-        className="rounded-lg mb-6"
+        className="rounded-xl"
       />
+      <div>
       <h1 className="text-3xl font-bold mb-2">{item.title}</h1>
       <p className="text-lg text-gray-700 mb-4">{item.description}</p>
       <p className="text-xl font-semibold text-green-600">{item.price}</p>
+      </div>
+     
     </motion.div>
   );
 };
