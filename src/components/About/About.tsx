@@ -6,11 +6,24 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const About = () => {
+
+  const sectionVariants = {
+    hidden: { opacity: 0, x: -100, y: 100 },
+    visible: { opacity: 1, x: 0, y: 0 },
+  };
+  const sectionRightVariants = {
+    hidden: { opacity: 0, x: 200  },
+    visible: { opacity: 1, x: 0  },
+  };
   return (
     <div>
-      <div className="py-5">
+      <motion.div  initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={sectionVariants}
+        transition={{ duration: 1 }} className="py-5">
         <AboutUs />
-      </div>
+      </motion.div>
       <div className="flex flex-col md:flex-row  justify-between items-center py-16 px-10 space-y-6 md:space-y-0 md:space-x-10">
         {/* Left Section */}
         <motion.div
@@ -56,9 +69,13 @@ const About = () => {
 
         {/* Right Section */}
         <div className="flex flex-col items-start text-left max-w-md space-y-4 ">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
+          <motion.h2  initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={sectionRightVariants}
+        transition={{ duration: 1 }}   className="text-3xl md:text-5xl font-bold text-gray-800">
             Top Tech Startup in Bangladesh <br />ecosystem
-          </h2>
+          </motion.h2>
           <p className="text-gray-600">
             WE’RE RAISING THE BAR ON OUR ACTIONS AND COMMITMENTS
           </p>

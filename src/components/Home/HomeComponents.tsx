@@ -1,19 +1,20 @@
 "use client";
 import dynamic from "next/dynamic";
-const HomeNavigation = dynamic(
-  () => import("./HomeNavigation/HomeNavigation"),
-  { ssr: false }
-);
-
 import React from "react";
-
+import { motion } from "framer-motion";
 import Section from "../share/Section";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import Awards from "./Awards/Awards";
 import Project from "./Projects/Project";
-// import Services from "./Services/Services";
 import TestimonialsComponent from "./Testimonials/TestimonialsComponent";
 import ExpandableCard from "../share/ExpandableCard/ExpandableCard";
+
+const HomeNavigation = dynamic(
+  () => import("./HomeNavigation/HomeNavigation"),
+  {
+    ssr: false,
+  }
+);
 
 const HomeComponents = () => {
   const items = [
@@ -32,8 +33,8 @@ const HomeComponents = () => {
     {
       url: "https://digitalrun.biz/uploads/clients/WhatsApp%20Image%202024-09-25%20at%2012.30.31%20PM%20(1)_20240925_084509.jpeg",
     },
-    // { url:"https://digitalrun.biz/uploads/clients/WhatsApp%20Image%202024-09-25%20at%2012.30.31%20PM%20(2)_20240925_092810.jpeg" },
   ];
+
   const cards = [
     {
       text: `Integrated\n ERP Solution\n for Seamless Business Management`,
@@ -60,35 +61,94 @@ const HomeComponents = () => {
       src: "https://digitalrun.biz/uploads/images/project_img_67290fe5ebfa7.jpg",
     },
   ];
+
+  const sectionVariants = {
+    hidden: { opacity: 0, x: -100, y: 100 },
+    visible: { opacity: 1, x: 0, y: 0 },
+  };
+  const testimonialsComponent = {
+    hidden: { opacity: 0, x: 100, y: 100 },
+    visible: { opacity: 1, x: 0, y: 0 },
+  };
+
   return (
     <div>
       <HomeNavigation />
-      <div className="flex justify-center items-center">
+      <motion.div
+        className="flex justify-center items-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={sectionVariants}
+        transition={{ duration: 1 }}
+      >
         <Section heading="Our Services" />
-      </div>
-      <div className="flex justify-center items-center">
+      </motion.div>
+      <motion.div className="flex justify-center items-center">
         <ExpandableCard />
-      </div>
-      <div className="flex justify-center items-center">
+      </motion.div>
+      <motion.div
+        className="flex justify-center items-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={sectionVariants}
+        transition={{ duration: 1 }}
+      >
         <Section heading="Our Clients" />
-      </div>
+      </motion.div>
       <InfiniteMovingCards items={items} />
-      <div className="flex justify-center items-center">
+      <motion.div
+        className="flex justify-center items-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={sectionVariants}
+        transition={{ duration: 1 }}
+      >
         <Section heading="Awards" />
-      </div>
+      </motion.div>
       <Awards />
-
-      <div className="flex justify-center items-center">
+      <motion.div
+        className="flex justify-center items-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={sectionVariants}
+        transition={{ duration: 1 }}
+      >
         <Section heading="Our Project" />
-      </div>
-      <Project cards={cards} />
-      <div className="flex justify-center items-center">
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={sectionVariants}
+        transition={{ duration: 1 }}
+      >
+        <Project cards={cards} />
+      </motion.div>
+
+      <motion.div
+        className="flex justify-center items-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={testimonialsComponent}
+        transition={{ duration: 1 }}
+      >
         <Section heading="Our Testimonial" />
-      </div>
-      <div className="pb-10">
-      <TestimonialsComponent />
-      </div>
-      
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={testimonialsComponent}
+        transition={{ duration: 1 }}
+        className="pb-10"
+      >
+        <TestimonialsComponent />
+      </motion.div>
     </div>
   );
 };
