@@ -71,6 +71,7 @@ const About = () => {
 
 
         <div className="flex flex-col items-start text-left max-w-md space-y-4 ">
+         
           <motion.h2
             initial="hidden"
             whileInView="visible"
