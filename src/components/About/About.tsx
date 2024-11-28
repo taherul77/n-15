@@ -27,7 +27,7 @@ const About = () => {
         <AboutUs />
       </motion.div>
       <div className="flex flex-col md:flex-row  justify-between items-center py-16 px-10 space-y-6 md:space-y-0 md:space-x-10">
-        {/* Left Section */}
+      
         <motion.div
           className="relative  h-[600px] pl-10 "
           initial={{ y: -20 }}
