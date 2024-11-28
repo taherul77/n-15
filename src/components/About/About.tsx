@@ -87,12 +87,12 @@ const About = () => {
             WE’RE RAISING THE BAR ON OUR ACTIONS AND COMMITMENTS
           </p>
           <div className="flex space-x-10">
-            {/* Team Members */}
+          
             <div className="text-center">
               <h3 className="text-4xl font-bold text-cyan-500">+20</h3>
               <p className="text-gray-700 font-medium">Team members</p>
             </div>
-            {/* Clients */}
+           
             <div className="text-center">
               <h3 className="text-4xl font-bold text-cyan-500">+10</h3>
               <p className="text-gray-700 font-medium">Clients</p>
