@@ -12,8 +12,6 @@ const ServicesComponent = () => {
   const images4 = "/images/image4.png";
   const images5 = "/images/image5.png";
   const images6 = "/images/image6.png";
- 
-
   return (
     <div>
       <div className="content-container bg-center bg-cover bg-no-repeat py-16">
